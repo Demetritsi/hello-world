@@ -5,18 +5,31 @@
 	<script src="Hello-World.js"></script>
   </head>
   <body>
-    <ol id="demo1"></ol>
+    <nav>
+	 <a href="index.html">Home</a>
+	 <a href="info.html">Info</a>
+	</nav>
+	<div id="testDiv">
+	</div>
+	<ol id="demo1"></ol>
 	<h1>
       First Website
     </h1>
     <p id="demo">
       Welcome to my first website!
     </p>
-    <img src="healthy-tree.webp" alt="A nice healthy tree." title="A tree..." height="250">
-	<form id="wordInput" onsubmit="return false">
-		Your Word:<br>
-		<input type="text" name="yourWord"> 
-	</form>
-	<button type="button" onclick="myFunction()">Submit</button>
+    <div id="treeAndText">
+		<form id="wordInput" onsubmit="return false">
+			Your Word:<br>
+			<input type="text" name="yourWord"> 
+			<button type="submit" onclick="myFunction()">Submit</button>
+		</form>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/9WJliNDkXco" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div id="treeDiv">
+			<img src="healthy-tree.webp" alt="A nice healthy tree." title="A tree..." height="250">
+		</div>
+	</div>
+	<video controls>
+	</video>
 </body>
 </html>
