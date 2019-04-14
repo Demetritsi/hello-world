@@ -1,17 +1,13 @@
-p {
+#demo {
     background-color: red;
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 	color: green;
 	animation: example infinite 4s Alternate;
 	position: sticky;
-	top: 0;
-}
-
-img {
-	filter: blur(2.2px) Contrast(67%);
-	transition: width 2s, filter 2s;
-	width: 20%;
+	top: 70px;
+	z-index: 2;
+	width: 100%;
 }
 
 @keyframes example {
@@ -22,37 +18,53 @@ img {
 	100% {background-color: green;}
 }
 
+img {
+	filter: blur(2.2px) Contrast(67%);
+	transition: width 2s, filter 2s;
+	width: 120px;
+/*	text-align: center; */
+}
+
 img:hover {
-	width: 100%;
+	width: 550px;
 	filter: blur(0px);
 }
 
-#testDiv {
-	width: 100px;
-	height: 100px;
-	background-color: green;
-	transition: width 3s;
-}
-
 #treeDiv {
-	width: 400px;
-	display: inline-block;
-}
-
-#treeAndText {
-	width: 720px;
-	position: relative;
+	display: flex;
+	justify-content: center;
+/*	width: 620px;*/
 }
 
 #wordInput {
-	display: inline-block;
-	position: relative;
+/*	display: inline-block;
+	position: relative; */
 	bottom: 220px;
 }
 
+#enteredText {
+	display: flex;
+	justify-content: space-between;
+}
+
+#demo1 {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+
+li {
+	margin-left: 55px;
+}
+
 iframe {
-	max-height: 50px;
-	max-width: 50px;
+	max-height: 410px;
+	max-width: 680px;
+}
+
+#treeVideo {
+	display: flex;
+	justify-content: center;
 }
 
 nav {
@@ -61,16 +73,33 @@ nav {
 	background-color: orange;
 	text-align: center;
 	position: fixed;
-
+	z-index: 5;
+	top: 0;
 }
+
+.transparent {
+	opacity: 0.8;
+}
+
 nav a {
 	display: block;
 	float: left;
 	padding: 20px;
 	transition: background-color 2s;
-	
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 20px;
+	letter-spacing: 2.2px;
+	word-spacing: 2.2px;
+	color: #FFFFFF;
+	font-weight: 400;
+	text-decoration: none solid rgb(68, 68, 68);
 }
 nav a:hover {
 	background-color: yellow;
 	transition: background-color 3s;
 }
+
+body {
+	padding-top: 70px;
+}
+

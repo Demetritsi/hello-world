@@ -6,4 +6,21 @@ function myFunction() {
    listTag.appendChild(takenWord)
    orderedList.appendChild(listTag);
    
-   }
+}
+	var timer;
+	var element1 = document.getElementById('OrangeNav')
+	window.addEventListener("scroll", function scrollCss(event) {
+	clearTimeout(timer);
+	timer=setTimeout(refresh,150);
+	//var animationBar = document.getElementById("demo")
+	//console.info(event);
+	console.info("working?",element1)
+	if (window.pageYOffset >= 209){
+		element1.className = "transparent";
+	}
+});
+function refresh() {
+	if (window.pageYOffset <= 209){
+		element1.className = "";
+	}
+}
